@@ -14,7 +14,7 @@ const log = message => {
 };
 
 client.on("ready", () => {
-  client.user.setGame(prefix + "yardım | SVO | 7-24") 
+  client.user.setGame(prefix + "yardım | Güncellemelerden Bot Bazen Çevirim Dışı Ola Bilir! | ClawBot.tk") 
   console.log("Bağlandım!")   
 });
 
@@ -40,10 +40,10 @@ fs.readdir('./komutlar/', (err, files) => {
   log(`${files.length} komut yüklenecek.`);
   files.forEach(f => {
     let props = require(`./komutlar/${f}`);
-    log(`Yüklenen komut: ${props.help.ad}.`);
-    client.commands.set(props.help.ad, props);
+    log(`Yüklenen komut: ${props.help.name}.`);
+    client.commands.set(props.help.name, props);
     props.conf.aliases.forEach(alias => {
-      client.aliases.set(alias, props.help.ad);
+      client.aliases.set(alias, props.help.name);
     });
   });
 });
