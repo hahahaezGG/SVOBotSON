@@ -17,6 +17,7 @@ exports.run = (client, message) => {
   .addField("**❯ Sürüm**", " BETA v2.2.1 ", )
   .addField("**❯ Yapıldığı Tarih**", " 24 Ekim 2018 ", )
 	.addField("**❯ Bot Davet**", " [Davet Et](https://discordapp.com/oauth2/authorize?client_id=473147706638860288&scope=bot&permissions=2146958847)", )
+	.addField("**❯ Destek Sunucusu**", " [Destek Sunucusu](https://discord.gg/8qmHaca)", )
 
 	.setThumbnail("https://forum.gamer.com.tr/attachments/bilgi-png.55209/");
     return message.author.sendEmbed(pingozel)
