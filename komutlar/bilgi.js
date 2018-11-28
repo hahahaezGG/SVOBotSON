@@ -13,7 +13,7 @@ exports.run = (client, message) => {
 	const pingozel = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setAuthor(message.author.username, message.author.avatarURL)
-	.addField("**❯ Yapımcı**", " OF HASAN ", )
+	.addField("**❯ Yapımcı**", " TD HASAN ", )
   .addField("**❯ Sürüm**", " BETA v2.2.1 ", )
   .addField("**❯ Yapıldığı Tarih**", " 24 Ekim 2018 ", )
 	.addField("**❯ Bot Davet**", " [Davet Et](https://discordapp.com/oauth2/authorize?client_id=473147706638860288&scope=bot&permissions=2146958847)", )
